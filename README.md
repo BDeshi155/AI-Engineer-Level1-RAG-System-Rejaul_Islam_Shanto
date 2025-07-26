@@ -179,17 +179,11 @@ Relevance: 0.844
 Accuracy: 0.226
 ==================================================
 
-
-📈 EVALUATION METRICS SUMMARY:
-       groundedness_score  relevance_score  accuracy_score
-count            3.000000         3.000000        3.000000
-mean             0.676643         0.849376        0.332566
-std              0.020298         0.010504        0.101521
-min              0.664923         0.842681        0.225894
-25%              0.664923         0.843323        0.284849
-50%              0.664923         0.843966        0.343804
-75%              0.682502         0.852724        0.385903
-max              0.700081         0.861482        0.428001
+| Metric            | Count | Mean    | Std     | Min     | 25%     | 50%     | 75%     | Max     |
+|-------------------|-------|---------|---------|---------|---------|---------|---------|---------|
+| Groundedness Score | 3     | 0.67664 | 0.02030 | 0.66492 | 0.66492 | 0.66492 | 0.68250 | 0.70008 |
+| Relevance Score   | 3     | 0.84938 | 0.01050 | 0.84268 | 0.84332 | 0.84397 | 0.85272 | 0.86148 |
+| Accuracy Score    | 3     | 0.33257 | 0.10152 | 0.22589 | 0.28485 | 0.34380 | 0.38590 | 0.42800 |
 
 # Question Answers
 1) What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
