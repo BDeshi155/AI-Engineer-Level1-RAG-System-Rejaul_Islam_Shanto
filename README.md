@@ -1,11 +1,13 @@
 # AI-Engineer-Level1-RAG-System-Rejaul_Islam_Shanto
 This project builds a bilingual (English/Bengali) RAG system using a chapter from Tagore’s Oporichita. The text is chunked by sentence for processing.
 
-#Setup Guide
+
+
+# Setup Guide
 This project completely doing in Google Colab. Firstly create a colab notebook. Upload there HSC26_chunks.txt file in drive and copy there file path form sidebar of colab folder. 
 After that paste there file path to there coding line accordingly. Then simply run there cells and see there outputs.
 
-#Tools, Library and Packages
+# Tools, Library and Packages
 Google Colab: Cloud-based Python environment with Google Drive integration.
 Flask: Lightweight web framework for API endpoints (/chat, /health, /batch_chat, /stats).
 ngrok: Exposes local server via public URL.
@@ -16,13 +18,13 @@ Pyngrok: Manages ngrok tunnels.
 Jupyter Widgets: Displays download progress.
 Werkzeug: Flask's WSGI utility for server operations.
 
-#Sample Queries and Outputs
+# Sample Queries and Outputs
 
 <img width="1919" height="1079" alt="Screenshot 2025-07-26 135842" src="https://github.com/user-attachments/assets/da4e597c-ec8c-4b3d-9d00-ebf8220bb908" />
 <img width="1919" height="1079" alt="Screenshot 2025-07-26 135815" src="https://github.com/user-attachments/assets/a2ca82fc-9a10-400d-abab-4982663bccfc" />
 <img width="1919" height="1079" alt="Screenshot 2025-07-26 123540" src="https://github.com/user-attachments/assets/4173af2f-1325-412b-8acc-46038d534e9c" />
 
-#Simple Conversational API Documentation
+# Simple Conversational API Documentation
 
 Base URL
 The base URL is dynamically generated via ngrok (e.g., https://<ngrok-id>.ngrok-free.app). Use get_current_api_url() to retrieve the active URL.
@@ -140,7 +142,7 @@ Notes
 Dataset: Uses /content/drive/MyDrive/dataset/HSC26_chunks.txt for RAG.
 Dependencies: Flask, LangChain, Hugging Face Hub, Requests, Pyngrok.
 
-#=== RAG SYSTEM EVALUATION REPORT ===
+# === RAG SYSTEM EVALUATION REPORT ===
 Generated on: 2025-07-26 08:21:26
 
 📊 AGGREGATE METRICS:
@@ -189,7 +191,7 @@ min              0.664923         0.842681        0.225894
 75%              0.682502         0.852724        0.385903
 max              0.700081         0.861482        0.428001
 
-#Ouestion Answers
+# Question Answers
 1) What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
 
 A: The code uses the tiktoken library with cl100k_base encoding for tokenization. It's chosen for its efficiency, compatibility with GPT-3.5/4 models, and ability to handle multilingual text like Bengali for precise chunking.
@@ -221,7 +223,24 @@ Refine Chunking: Maybe using better paid version of language models for semantic
 Better Embedding Model: Adopt intfloat/multilingual-e5-large for enhanced semantic capture.
 Improved Extraction: Enhance _extract_answer_from_context with NLP-based matching.
 
+# Project Timeline
 
+Day 1-2: Data Preparation
+- Extracted Bengali text from PDF source
+- Created structured document files
+- Translated content to English
+- Prepared bilingual markdown files
+
+Day 3: RAG System Development
+- Built basic Retrieval-Augmented Generation pipeline
+- Implemented sentence-based text chunking
+- Configured bilingual processing capabilities
+
+Day 4-5: API Development & Evaluation
+-Designed lightweight REST API interface
+- Integrated RAG system with API endpoints
+- Implemented evaluation metrics
+- Conducted system testing and refinements
 
 
 
